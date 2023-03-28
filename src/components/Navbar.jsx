@@ -15,9 +15,9 @@ function Navbar() {
       document.body.scrollTop > 80 ||
       document.documentElement.scrollTop > 80
     ) {
-      document.querySelector(".navbarcon").style.backgroundColor = "#171717";
+      document.querySelector(".navbarcon").style.backgroundColor = "";
     } else {
-      document.querySelector(".navbarcon").style.backgroundColor =
+      document.querySelector(".navbarcon").style.backgroundColor = "#171717"
         "rgba(0, 0, 0, 0)";
       document.querySelector(".tl").style.backgroundColor = "rgba(0, 0, 0, 0)";
     }
@@ -46,6 +46,14 @@ function Navbar() {
           </ul>
 
           <div className="icon text-lg flex gap-4  lg:gap-8 lg:my-10">
+          <a href="https://www.facebook.com/lephan.tuananh.90/" target="_blank">
+              <i className="fa-brands fa-facebook border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/en/" target="_blank">
+              <i className="fa-brands fa-tiktok border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
+            </a>
+
             <a href="https://twitter.com/home?lang=en" target="_blank">
               <i className="fa-brands fa-twitter border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
             </a>
@@ -62,7 +70,9 @@ function Navbar() {
           </div>
           <div className="btn">
             <button className="border-[1px] border-white border-solid py-2 px-4 hover:bg-white hover:text-black font-bold">
+              <AnchorLink href="#contact">
               Let's Connect
+              </AnchorLink>
             </button>
           </div>
         </nav>
